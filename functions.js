@@ -1,11 +1,26 @@
-let rps = ["rocks", "paper", "scissor"];
+let rps = ["rock", "paper", "scissor"];
 
-function myFunction() { 
-    document.getElementById("demo").innerHTML = "mama dukes";
+
+function playersChoices(playerSelection = 'rock') {
+
+if (playerSelection === rps.indexOf('rock')) {
+    
+return playerSelection; 
+    }
+
+      else {
+        return 'nothing was picked so this is default';
+    }
 }
 
-console.log(Math.floor(3.95));
+const playerSelection = "rock";
 
-function computerChoices(rock, paper, scissor) { 
+console.log(playersChoices('rock'));
 
-}
+   //  else if (playerSelection === rps.indexOf('paper')) {
+    //     return "user picked paper";
+    //  }
+
+    //  else if (playerSelection === rps.indexOf('scissor')) {
+    //     return "user picked scissor";
+    //  }
